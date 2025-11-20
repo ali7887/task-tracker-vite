@@ -1,0 +1,19 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "text": "Learn React",
+      "completed": false
+    },
+    {
+      "id": "2",
+      "text": "Build Project",
+      "completed": true
+    },
+    {
+      "id": "816d",
+      "text": "ali",
+      "completed": false
+    }
+  ]
+}
