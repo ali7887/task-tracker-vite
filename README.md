@@ -1,20 +1,105 @@
-<<<<<<< HEAD
-# React + Vite
+# Task Tracker - React + Vite + JSON Server
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and lightweight **Task Tracker** app built with **React** and **Vite**, featuring real-time CRUD operations with a **fake REST API** using **JSON Server**.  
+Inspired by Google Keep and designed for learning real-world React concepts with backend integration.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔥 Features
 
-## React Compiler
+- **CRUD Operations with API**: Add, update, toggle, and delete tasks with backend persistence.
+- **Filter Tasks**: View **All**, **Active**, or **Completed** tasks.
+- **LocalStorage Sync**: Your tasks are saved in LocalStorage to prevent data loss.
+- **Double Click to Edit**: Easily edit a task by double-clicking on it.
+- **Responsive UI**: Clean and modern interface using minimal TailwindCSS styling.
+- **Component-based Architecture**: Scalable React components for easy maintenance.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# task-tracker-vite
->>>>>>> 2837d6bd3b68fe3b24903bf73f7a78af12a15d26
+- **Frontend:** React, Vite, TailwindCSS
+- **Backend:** JSON Server (Fake REST API)
+- **Language:** JavaScript (ES6+)
+- **Package Manager:** npm
+
+---
+
+## ⚡ Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/<your-username>/task-tracker-vite.git
+cd task-tracker-vite
+npm install
+npm install -g json-server
+npm run dev
+Open http://localhost:5173 in your browser.
+
+task-tracker-vite/
+ ├─ public/
+ ├─ src/
+ │   ├─ api/
+ │   │   └─ tasksApi.js        # API calls
+ │   ├─ components/
+ │   │   ├─ Header.jsx
+ │   │   ├─ AddTask.jsx
+ │   │   ├─ TaskList.jsx
+ │   │   └─ TaskItem.jsx
+ │   ├─ App.jsx
+ │   └─ main.jsx
+ ├─ db.json                    # JSON Server database
+ ├─ package.json
+ └─ vite.config.js
+
+
+✅ Usage
+
+Add a task using the input field and "Add" button.
+
+Toggle completion by clicking on a task.
+
+Edit a task by double-clicking it.
+
+Delete a task using the red "Delete" button.
+
+Filter tasks with the All / Active / Completed buttons.
+
+Changes are synced with JSON Server and LocalStorage.
+
+🎯 Learning Outcomes
+
+This project helps you learn:
+
+React component-based architecture
+
+Managing state and props
+
+Using fetch API for real backend integration
+
+Handling async/await in React
+
+Implementing CRUD operations
+
+Using LocalStorage for persistence
+
+Building a modern UI with TailwindCSS
+
+📌 Future Improvements
+
+Add user authentication with JWT
+
+Integrate React Query for smarter data fetching
+
+Add drag-and-drop tasks reordering
+
+Add notifications for completed tasks
+
+🔗 Live Preview
+
+Currently, this project is running locally using Vite and JSON Server.
+
+👨‍💻 Author
+
+ALI KANI – GitHub
